@@ -1,15 +1,83 @@
 <?php
-require "Connection.php" ;
 class ClienteModel extends Connection {
-	public function set ($cliente_data = array()) {
-		foreach ($cliente_data as $key => $value) {
-			$$key = $value;
+	public function set ($cliente = array ()) {}
+	public function get ($cliente = "") {
+		$this->query = ($cliente != "") ? "SELECT * FROM cliente AS cl
+										   INNER JOIN administrador AS ad
+										   ON cl.adminDNI = ad.adminDNI
+										   WHERE clienteDNI = '$cliente'" 
+										: "SELECT * FROM cliente AS cl
+										   INNER JOIN administrador AS ad
+										   ON cl.adminDNI = ad.adminDNI" ;
+		$this->get_query () ;
+		foreach ($this->rows as $key => $value) {
+			$data[$key] = $value ;
 		}
-		$this->query = "
-		REPLACE INTO users (mail, name, user, password, telephone)
-		VALUES ('$mail', '$name', '$user', '$password', '$telephone')";
-		$this->set_query();
+		return $data ;
 	}
+	public function del ($cliente = "") {}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*require "Connection.php" ;
+class ClienteModel extends Connection {
+	public function set ($cliente_data = array()) {}
 
 	public function get ($cliente = "") {
         $this->query = ($cliente != "")  ? "SELECT * FROM cliente AS cl 
@@ -19,7 +87,6 @@ class ClienteModel extends Connection {
 										 : "SELECT * FROM cliente AS cl 
                                             JOIN administrador As ad
                                             ON cl.adminDNI = ad.adminDNI " ;
-        //$this->query = ($cliente != "") ? "SELECT * FROM cliente WHERE clienteDNI = '$cliente'" : "SELECT * FROM cliente" ;
 		$this->get_query () ;
 
 		foreach ($this->rows as $key => $value) {
@@ -29,14 +96,4 @@ class ClienteModel extends Connection {
 	}		
 
 	public function del () {}
-
-	public function validate_user ($user, $password) {
-		$this->query = "SELECT * FROM users WHERE user = '$user' AND password = '$password'" ;
-		$this->get_query () ;
-		$data = array () ;
-		foreach ($this->rows as $key => $value) {
-			$data[$key] = $value ;
-		}
-		return $data ;
-	}	
-}
+}*/

@@ -1,10 +1,4 @@
-<?php
-/*Tabla cliente*/
-$clientecontroller = new ClienteController () ;
-$c = "" ;
-$objectCliente = $clientecontroller->getCliente ($cliente = $c) ;
-//print $objectCliente[0]["clienteDNI"] ;
-?>
+<?php require_once ("./tables/table-cliente.php") ; ?>
 <div class="bg-white p-5p-0">
     <div class="bg-3 text-center text-white border p-2">Tabla Cliente</div>
     <div class="bg-white border p-3">

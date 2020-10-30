@@ -1,9 +1,7 @@
 <?php
 require "Connection.php" ;
 class AdminModel extends Connection {
-	public function set ($admin_data = array()) {
-
-	}
+	public function set () {}
 
 	public function get ($admin = "") {
         $this->query = ($admin != "")  ? "SELECT * FROM administrador WHERE adminDNI = '$admin'" : "SELECT * FROM administrador" ;

@@ -13,7 +13,7 @@ abstract class Connection {
     abstract protected function get () ;
     abstract protected function del () ;
 
-    private function database_open () {
+    private function open_database () {
         $this->connected = new mysqli (
             self::$database_host ,
             self::$database_user ,
@@ -21,26 +21,25 @@ abstract class Connection {
             self::$database_name
         ) ;
         $this->connected->set_charset (
-            self::$database_char
+            self::$database_host
         ) ;
     }
 
-    private function database_close  () {
+    private function close_database () {
         $this->connected->close () ;
     }
 
-    protected function query_set () {
-        $this->database_open () ;
+    protected function set_query () {
+        $this->open_database () ;
         $this->connected->query ($this->query) ;
-        $this->database_close () ;
+        $this->close_database () ;
     }
-    
-    protected function query_get () {
-        $this->database_open () ;
+    protected function get_query () {
+        $this->open_database () ;
         $result = $this->connected->query ($this->query) ;
         while ($this->rows [] = $result->fetch_assoc ()) ;
         $result->close () ;
-        $this->database_close () ;
+        $this->close_database () ;
         return array_pop ($this->rows) ;
     }
 }
