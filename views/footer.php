@@ -13,20 +13,8 @@
         </div>    
     </div>
 </div>
-<!--div class="container bg-dark text-1 p-3 borde">
-    <div class="row">
-        <div class="col-md-4 border p-1">
-            Contacto
-        </div>
-        <div class="col-md-4 border p-1">
-            Redes Sociales
-        </div>
-        <div class="col-md-4 border p-1">
-            Redes Sociales
-        </div>
-    </div>
-</div-->
-<script src="http://localhost/public/js/home.js"></script>
+
+<script src="http://localhost/public/js/chat_home.js"></script>
 </body>
 </html>
 

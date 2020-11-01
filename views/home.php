@@ -157,34 +157,36 @@
         <div class="row justify-content-center borde">
             <div class="col-md-9 p-0 borde">
                 <div class="col-md-12 text-1 text-center borde">Registrate</div>
+
+                <form action="" method="post"  id="set_cliente">
                 <div class="col-md-12 borde">
-                    <input class="col-md-12 bg-4 border border-bottom-4 p-2 text-1 form-control" type="text" placeholder="Nombre">
+                    <input class="col-md-12 bg-4 border border-bottom-4 p-2 text-1 cl_nombre" name="cl_nombre" type="text" placeholder="Nombre">
                 </div>
                 <div class="col-md-12 borde">
-                    <input class="col-md-12 bg-4 border border-bottom-4 p-2 text-1 form-control" type="text" placeholder="Apellidos">
+                    <input class="col-md-12 bg-4 border border-bottom-4 p-2 text-1 cl_apellido" name="cl_apellido" type="text" placeholder="Apellidos">
                 </div>
                 <div class="col-md-12 borde">
-                    <input class="col-md-12 bg-4 border border-bottom-4 p-2 text-1 form-control" type="text" placeholder="Teléfono">
+                    <input class="col-md-12 bg-4 border border-bottom-4 p-2 text-1 cl_telefono" name="cl_telefono" type="text" placeholder="Teléfono">
                 </div>
                 <div class="col-md-12 borde">
-                    <input class="col-md-12 bg-4 border border-bottom-4 p-2 text-1 form-control" type="text" placeholder="Empresa">
+                    <input class="col-md-12 bg-4 border border-bottom-4 p-2 text-1 cl_mail" name="cl_mail" type="text" placeholder="Correo Electrónico">
                 </div>
                 <div class="col-md-12 borde">
-                    <input class="col-md-12 bg-4 border border-bottom-4 p-2 text-1 form-control" type="text" placeholder="Correo Electrónico">
-                </div>
-                <div class="col-md-12 borde">
-                    <input class="col-md-12 bg-4 border border-bottom-4 p-2 text-1 form-control" type="text" placeholder="Contraseña">
+                    <input class="col-md-12 bg-4 border border-bottom-4 p-2 text-1 cl_pass" name="cl_pass" type="text" placeholder="Contraseña">
                 </div>
                 <div class="col-md-12 borde p-3">
-                <div class="form-group">
-                    <textarea class="form-control bg-4 border-msj" id="exampleFormControlTextarea1" rows="3" placeholder="Escribe aquí tu mensaje"></textarea>
-                </div>
+                    <div class="form-group">
+                        <textarea class="formulario-control bg-4 border-msj cl_mensaje" name="cl_mensaje" id="exampleFormControlTextarea1" rows="3" placeholder="Escribe aquí tu mensaje"></textarea>
+                    </div>
                 </div>
                 <div class="col-md-12 borde"><br>
                 <input class="col-md-12 form-control" type="submit" placeholder="Usuario">
                 </div>
+                </form>
                 <div class="col-md-12 borde"></div>
             </div>
         </div>
     </div>
 </div>
+<script src="http://localhost/public/js/validar_cliente_home.js"></script>
+<?php require_once ("./setters/set-cliente.php") ; ?>

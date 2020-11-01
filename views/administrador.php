@@ -1,4 +1,4 @@
-<?php require_once ("./tables/table-administrador.php") ; ?>
+<?php require_once ("./getters/get-administrador.php") ; ?>
 <div class="bg-white p-5p-0">
     <div class="bg-3 text-center text-white border p-2">Tabla administrador</div>
     <div class="bg-white border p-3">

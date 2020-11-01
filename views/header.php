@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="http://localhost/public/bootstrap-4.3.1-dist/css/bootstrap.min.css">
-	<script src="https://js.stripe.com/v3/"></script>
+	<!--script src="https://js.stripe.com/v3/"></script-->
 	<script src="http://localhost/public/js/jquery-3.4.0.min.js"></script>
     <script src="http://localhost/public/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+
     <link rel="stylesheet" href="http://localhost/public/css/style.css">
 </head>
 <body>

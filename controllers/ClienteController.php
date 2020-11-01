@@ -11,7 +11,7 @@ class ClienteController {
 	}
 
 	public function setCliente ($cliente_data) {
-		return $this->clientemodel->set ($user_data) ;
+		return $this->clientemodel->set ($cliente_data) ;
 	}
 
 	public function __destruct () {

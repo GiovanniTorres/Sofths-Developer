@@ -1,6 +1,6 @@
 <?php
 class ClienteModel extends Connection {
-	public function set ($cliente = array ()) {}
+	public function set ($cliente_data = array ()) {}
 	public function get ($cliente = "") {
 		$this->query = ($cliente != "") ? "SELECT * FROM cliente AS cl
 										   INNER JOIN administrador AS ad

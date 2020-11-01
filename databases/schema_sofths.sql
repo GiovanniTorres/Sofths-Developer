@@ -21,6 +21,8 @@ CREATE TABLE cliente (
     adminDNI INT NOT NULL ,
     cl_nombre VARCHAR (40) NOT NULL ,
     cl_apellidos VARCHAR (80) NOT NULL ,
+    cl_usuario VARCHAR (30) NOT NULL ,
+    cl_password VARCHAR (30) NOT NULL ,
     cl_edad INT NOT NULL ,
     cl_rfc VARCHAR (20) NOT NULL ,
     cl_telefono VARCHAR (10) NOT NULL ,
@@ -83,10 +85,10 @@ INSERT INTO administrador (adminDNI, ad_nombre, ad_apellidos, ad_edad, ad_rfc, a
 (NULL, 'Giovanni', 'Torres Miranda', 33, 'TOMJ8708018F8', '1111111111', 'giovanni@gmail.com', 'calle Cuauhtemoc 2, Ameyalco, Lerma, Estado de México', '52040') , 
 (NULL, 'Lupita', 'Caballero Juárez', 25, 'CAJG9411128F8', '2222222222', 'lupita@gmail.com', 'calle Cuauhtemoc 2, Ameyalco, Lerma, Estado de México', '52040') ;
 
-INSERT INTO cliente (clienteDNI, adminDNI, cl_nombre, cl_apellidos, cl_edad, cl_rfc, cl_telefono, cl_mail, cl_direccion, cl_cp, razon_social, sello_digital) VALUES
-(NULL, 1, 'Daniela', 'Torres Caballero', 7, 'TOCD9411128F8', '3333333333', 'daniela@gmail.com', 'calle Cuauhtemoc 2, Ameyalco, Lerma, Estado de México', '52040', 'Daniela Torres Caballero', 'ghjkiuytdvbhjuytfJHGFDCVBjdcvbj4567887654JHFVBGBNMUY________kfghjjuyt') , 
-(NULL, 2, 'Clara', 'Miranda Gonzaga', 50, 'MIGC9411128F8', '4444444444', 'clara@gmail.com', 'calle Cuauhtemoc 2, Ameyalco, Lerma, Estado de México', '52040', 'Clara Miranda Gonzaga', 'ghjkiuytdvbhjuytfJHGFDCVBjdcvbj4567887654JHFVBGBNMUY________kfghjjuyt') , 
-(NULL, 2, 'Ricardo', 'Torres Flores', 51, 'TOFR9411128F8', '5555555555', 'ricardo@gmail.com', 'calle Cuauhtemoc 2, Ameyalco, Lerma, Estado de México', '52040', 'Ricardo Torres Flores', 'ghjkiuytdvbhjuytfJHGFDCVBjdcvbj4567887654JHFVBGBNMUY________kfghjjuyt') ;
+INSERT INTO cliente (clienteDNI, adminDNI, cl_nombre, cl_apellidos, cl_usuario, cl_password, cl_edad, cl_rfc, cl_telefono, cl_mail, cl_direccion, cl_cp, razon_social, sello_digital) VALUES
+(NULL, 1, 'Daniela', 'Torres Caballero', 'Dani1000', '39785tom', 7, 'TOCD9411128F8', '3333333333', 'daniela@gmail.com', 'calle Cuauhtemoc 2, Ameyalco, Lerma, Estado de México', '52040', 'Daniela Torres Caballero', 'ghjkiuytdvbhjuytfJHGFDCVBjdcvbj4567887654JHFVBGBNMUY________kfghjjuyt') , 
+(NULL, 2, 'Clara', 'Miranda Gonzaga', 'Clara2000', '39785tom', 50, 'MIGC9411128F8', '4444444444', 'clara@gmail.com', 'calle Cuauhtemoc 2, Ameyalco, Lerma, Estado de México', '52040', 'Clara Miranda Gonzaga', 'ghjkiuytdvbhjuytfJHGFDCVBjdcvbj4567887654JHFVBGBNMUY________kfghjjuyt') , 
+(NULL, 2, 'Ricardo', 'Torres Flores', 'Rick3000', '39785tom', 51, 'TOFR9411128F8', '5555555555', 'ricardo@gmail.com', 'calle Cuauhtemoc 2, Ameyalco, Lerma, Estado de México', '52040', 'Ricardo Torres Flores', 'ghjkiuytdvbhjuytfJHGFDCVBjdcvbj4567887654JHFVBGBNMUY________kfghjjuyt') ;
 
 INSERT INTO articulo (articuloDNI, nombre, descripcion, version_art, precio) VALUES
 (NULL, 'Dominio', 'Nombre de la página web', 'N/A', 200) , 
