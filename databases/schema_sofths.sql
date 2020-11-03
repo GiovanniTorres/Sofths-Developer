@@ -18,19 +18,20 @@ CREATE TABLE administrador (
 USE sofths ;
 CREATE TABLE cliente (
     clienteDNI INT NOT NULL AUTO_INCREMENT ,
-    adminDNI INT NOT NULL ,
+    adminDNI INT ,
     cl_nombre VARCHAR (40) NOT NULL ,
     cl_apellidos VARCHAR (80) NOT NULL ,
     cl_usuario VARCHAR (30) NOT NULL ,
     cl_password VARCHAR (30) NOT NULL ,
-    cl_edad INT NOT NULL ,
-    cl_rfc VARCHAR (20) NOT NULL ,
+    cl_edad INT ,
+    cl_rfc VARCHAR (20) ,
     cl_telefono VARCHAR (10) NOT NULL ,
-    cl_mail VARCHAR (50) NOT NULL ,    
-    cl_direccion VARCHAR (100) NOT NULL ,
-    cl_cp INT NOT NULL ,
-    razon_social VARCHAR (110) NOT NULL ,
-    sello_digital TEXT (150) NOT NULL ,
+    cl_mail VARCHAR (50) NOT NULL ,   
+    cl_mensaje TEXT (350) NOT NULL , 
+    cl_direccion VARCHAR (100) ,
+    cl_cp INT ,
+    razon_social VARCHAR (110) ,
+    sello_digital TEXT (150) ,
     PRIMARY KEY (clienteDNI) ,
     FOREIGN KEY (adminDNI) REFERENCES administrador (adminDNI) ON UPDATE CASCADE ON DELETE CASCADE
 ) ;
@@ -39,8 +40,7 @@ CREATE TABLE articulo (
     articuloDNI INT NOT NULL AUTO_INCREMENT ,
     nombre VARCHAR (40) NOT NULL ,
     descripcion TEXT (500) NOT NULL ,
-    version_art VARCHAR (20) NOT NULL,
-    precio DECIMAL (7,2) NOT NULL ,
+    version_art VARCHAR (20) NOT NULL,    precio DECIMAL (7,2) NOT NULL ,
     PRIMARY KEY (articuloDNI) 
 ) ;
 
