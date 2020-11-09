@@ -18,12 +18,13 @@ abstract class Connection {
             self::$database_host ,
             self::$database_user ,
             self::$database_pass ,
-            self::$database_name
+            self::$database_name ,
         ) ;
         $this->connected->set_charset (
             self::$database_char
         ) ;
     }
+
     private function close_database () {
         $this->connected->close () ;
     }

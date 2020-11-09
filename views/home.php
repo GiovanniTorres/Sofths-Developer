@@ -160,26 +160,26 @@
 
                 <form action="" method="post"  id="set_cliente">
                 <div class="col-md-12 borde">
-                    <input class="col-md-12 bg-4 border border-bottom-4 p-2 text-1 cl_nombre" name="cl_nombre" type="text" placeholder="Nombre">
+                    <input class="col-md-12 bg-4 border border-bottom-1 p-2 text-1 cl_nombre" name="cl_nombre" type="text" placeholder="Nombre">
                 </div>
                 <div class="col-md-12 borde">
-                    <input class="col-md-12 bg-4 border border-bottom-4 p-2 text-1 cl_apellidos" name="cl_apellidos" type="text" placeholder="Apellidos">
+                    <input class="col-md-12 bg-4 border border-bottom-1 p-2 text-1 cl_apellidos" name="cl_apellidos" type="text" placeholder="Apellidos">
                 </div>
                 <div class="col-md-12 borde">
-                    <input class="col-md-12 bg-4 border border-bottom-4 p-2 text-1 cl_usuario" name="cl_usuario" type="text" placeholder="Usuario">
+                    <input class="col-md-12 bg-4 border border-bottom-1 p-2 text-1 cl_usuario" name="cl_usuario" type="text" placeholder="Usuario">
                 </div>
                 <div class="col-md-12 borde">
-                    <input class="col-md-12 bg-4 border border-bottom-4 p-2 text-1 cl_password" name="cl_password" type="text" placeholder="Contraseña">
+                    <input class="col-md-12 bg-4 border border-bottom-1 p-2 text-1 cl_password" name="cl_password" type="text" placeholder="Contraseña">
                 </div>
                 <div class="col-md-12 borde">
-                    <input class="col-md-12 bg-4 border border-bottom-4 p-2 text-1 cl_telefono" name="cl_telefono" type="text" placeholder="Teléfono">
+                    <input class="col-md-12 bg-4 border border-bottom-1 p-2 text-1 cl_telefono" name="cl_telefono" type="text" placeholder="Teléfono">
                 </div>
                 <div class="col-md-12 borde">
-                    <input class="col-md-12 bg-4 border border-bottom-4 p-2 text-1 cl_mail" name="cl_mail" type="text" placeholder="Correo Electrónico">
+                    <input class="col-md-12 bg-4 border border-bottom-1 p-2 text-1 cl_mail" name="cl_mail" type="text" placeholder="Correo Electrónico">
                 </div>
                 <div class="col-md-12 borde p-3">
                     <div class="form-group">
-                        <textarea class="formulario-control bg-4 border-msj cl_mensaje" name="cl_mensaje" id="exampleFormControlTextarea1" rows="3" placeholder="Escribe aquí tu mensaje"></textarea>
+                        <textarea class="formulario-control textborder1 bg-4 border-msj cl_mensaje" name="cl_mensaje" id="exampleFormControlTextarea1" rows="3" placeholder="Escribe aquí tu mensaje"></textarea>
                     </div>
                 </div>
                 <div class="col-md-12 borde"><br>
@@ -191,5 +191,5 @@
         </div>
     </div>
 </div>
-<script src="http://localhost/public/js/validar_cliente_home.js"></script>
+<!--script src="http://localhost/public/js/validar_cliente_home.js"></script-->
 <?php require_once ("./setters/set-cliente.php") ; ?>

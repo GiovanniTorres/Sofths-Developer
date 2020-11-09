@@ -1,8 +1,8 @@
-function setCliente () {
-	document.querySelector("#set_cliente").addEventListener("submit",validarForm1);
+function setUpdateCliente () {
+	document.querySelector("#set_update_cliente").addEventListener("submit",validarUpdateCliente);
 }
 
-function validarForm1 (event) {
+function validarUpdateCliente (event) {
     var vcl_nombre = document.querySelector(".cl_nombre").value ;
     var vcl_apellidos = document.querySelector(".cl_apellidos").value ;
     var vcl_usuario = document.querySelector(".cl_usuario").value ;
@@ -18,7 +18,6 @@ function validarForm1 (event) {
     var cl_telefono = document.querySelector(".cl_telefono") ;
     var cl_mail = document.querySelector(".cl_mail") ;
     var cl_mensaje = document.querySelector(".cl_mensaje") ;
-
 
     if (vcl_nombre === "") {
         event.preventDefault () ;
@@ -78,4 +77,4 @@ function validarForm1 (event) {
     }
 }
 
-window.addEventListener ("load", setCliente) ;
+window.addEventListener ("load", setUpdateCliente) ;

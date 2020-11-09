@@ -11,14 +11,13 @@
                     <th class="border text-center xx-small p-2p-0">Teléfono</th>
                     <th class="border text-center xx-small p-2p-0">Correo Electrónico</th>
                     <th class="border text-center xx-small p-2p-0">Administrador</th>
-                    <th class="border text-center xx-small p-2p-0">Nuevo</th>
                     <th class="border text-center xx-small p-2p-0">Actualizar</th>
                     <th class="border text-center xx-small p-2p-0">Eliminar</th>
                 </tr>
             </thead>
             <tbody>
                 <?php 
-                for ($i=0; $i <= 2 ; $i++) { 
+                for ($i=0; $i <= $cant_objectCliente-1 ; $i++) { 
                 ?>
                 <tr>
                     <td class="border text-center xx-small p-2p-0"><?php print $objectCliente[$i]["clienteDNI"]?></td>
@@ -27,9 +26,8 @@
                     <td class="border text-center xx-small p-2p-0"><?php print $objectCliente[$i]["cl_telefono"]?></td>
                     <td class="border text-center xx-small p-2p-0"><?php print $objectCliente[$i]["cl_mail"]?></td>
                     <td class="border text-center xx-small p-2p-0"><?php print $objectCliente[$i]["ad_nombre"]?></td>
-                    <td class="border text-center xx-small p-2p-0"><a href="#"><img src="http://localhost/images/nuevo.png" height="30" alt=""></a></td>
-                    <td class="border text-center xx-small p-2p-0"><a href="#"><img src="http://localhost/images/editar.png" height="30" alt=""></a></td>
-                    <td class="border text-center xx-small p-2p-0"><a href="#"><img src="http://localhost/images/eliminar.png" height="30" alt=""></a></td>
+                    <td class="border text-center xx-small p-2p-0"><?php print "<a href='http://localhost/cliente/update_cliente/".$objectCliente[$i]["clienteDNI"]."'>" ?><img src="http://localhost/images/editar.png" height="30" alt=""></a></td>
+                    <td class="border text-center xx-small p-2p-0"><a href="http://localhost/cliente/delete_usr"><img src="http://localhost/images/eliminar.png" height="30" alt=""></a></td>
                 </tr>
                 <?php 
                 }
